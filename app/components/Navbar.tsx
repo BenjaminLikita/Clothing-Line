@@ -18,7 +18,7 @@ function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg
           
           <Link href={"/"} className='text-3xl md:text-4xl font-semibold'>Logo</Link>
 
-          <nav className={clsx('justify-between font-medium text-xl md:text-lg block md:flex bg-gray-500 bg-opacity-95 w-[50%] md:w-[55%] lg:w-[40%] text-gray-700 md:text-inherit h-full transition-all duration-500 md:bg-transparent fixed md:relative top-0 p-10 pl-5 pt-14 md:p-0', {
+          <nav className={clsx('justify-between font-medium text-xl md:text-lg block md:flex bg-gray-500 bg-opacity-95 w-[60%] md:w-[55%] lg:w-[40%] text-gray-700 md:text-inherit h-full transition-all duration-500 md:bg-transparent fixed md:relative top-0 p-10 pl-5 pt-14 md:p-0', {
             ['right-0 bg-white z-50 p-10']: visible,
             ['right-[-100%] md:right-0']: !visible
           })}>
