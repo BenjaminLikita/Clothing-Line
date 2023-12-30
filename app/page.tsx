@@ -38,7 +38,7 @@ export default function Home() {
 
       </div>
         <div className={`text-center m-auto mt-10 w-[80%] ${montserrat.className}`}>
-          <h1 className={`text-green-500 text-3xl md:text-4xl pb-2`}><i>About the Collection</i></h1>
+          <h1 className={`text-green-500 text-3xl font-medium md:text-4xl pb-2`}><i>About the Collection</i></h1>
           <p className='text-gray-500'>I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
         </div>
 
@@ -49,9 +49,9 @@ export default function Home() {
         />
 
         <div className={`mx-auto block my-24 w-[70%] ${montserrat.className}`}>
-          <h1 className={`text-center text-green-500 text-3xl md:text-4xl pb-2`}><i>Never miss our updates about new arrivals and special offers</i></h1>
+          <h1 className={`text-center text-green-500 text-xl md:text-4xl pb-2`}><i>Never miss our updates about new arrivals and special offers</i></h1>
           <input type='email' placeholder='Enter your email here*' className='transition-all duraton-300 hover:border-b-2 focus:border-b-2 focus:border-gray-700 hover:border-gray-700 border-b w-[100%] text-lg italic pb-3 mt-5 outline-none' />
-          <button className='bg-gray-800 my-5 px-5 py-3 text-white w-[50%] grid m-auto'>Subscribe Now</button>
+          <button className='bg-gray-800 my-5 px-5 py-3 text-white w-[100%] md:w-[50%] grid m-auto'>Subscribe Now</button>
         </div>
         <Footer />
     </div>
