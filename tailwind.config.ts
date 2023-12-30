@@ -16,6 +16,9 @@ const config: Config = {
         'banner-img': "url('../public/banner.jpg')",
       },
     },
+    fontFamily: {
+      'arial': ['Arial', 'sans-serif'],
+    }
   },
   plugins: [],
 };
