@@ -12,7 +12,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'contact-bg': "url('../public/phoneImg.jpg')",
+        'contact-img': "url('../public/phoneImg.jpg')",
+        'banner-img': "url('../public/banner.jpg')",
       },
     },
   },

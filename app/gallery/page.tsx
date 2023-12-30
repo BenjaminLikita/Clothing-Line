@@ -20,15 +20,6 @@ interface CloudinaryResource {
 }
 async function GalleryPage() {
   
-
-  // const result = await cloudinary.api.resources({resource_type: "image", folder: "samples"}, (err, res) => {
-  //   if(err){
-  //     console.log(err);
-  //   }
-  // })
-  // const result = await cloudinary.api.resources().then(result => result);
-
-  
   
   const result = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image`, {
     headers : {
@@ -44,13 +35,15 @@ async function GalleryPage() {
       <div className='w-[90%] m-auto'>
         <h1 className='my-5 text-6xl text-center font-bold'>Gallery</h1>
         <p className='bg-gray-900 text-white w-max py-3 px-5 rounded-3xl font-bold'>Photos <span className='pl-5 text-gray-500 font-normal'>{result.resources.length}</span></p>
-        <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%] my-7 gap-5`}>
+        {/* <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%] my-7 gap-5`}> */}
+        <div className={`grid sm:grid-cols-2 md:grid-cols-3 w-[100%] my-7 gap-5`}>
           {
             result.resources.map((item: CloudinaryResource, i: number) => (
               <div
               key={item.public_id}
               className={clsx(`rounded-md cursor-pointer overflow-hidden`, {
                 [`lg:row-span-2 md:col-span-2 lg:col-span-1`]: i % 2,
+                // [`lg:row-span-2 md:col-span-2 lg:col-span-1`]: i % 2,
               })}
               >
                 <Image

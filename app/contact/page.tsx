@@ -12,12 +12,12 @@ function ContactPage() {
 
   return (
     <div>
-      <section className='h-[60vh] bg-contact-bg bg-cover bg-center'>
+      <section className='h-[60vh] bg-contact-img bg-cover bg-center'>
         <div>
           <Navbar color={"text-white"} border={"border-gray-700"} opacity={"bg-opacity-40"}/>
         </div>
         
-        <h1 className=' font-bold text-5xl w-full text-white text-center pt-24'>Contact Us</h1>
+        <h1 className=' font-bold sm:text-2xl lg:text-5xl w-full text-white text-center pt-24'>Contact Us</h1>
       </section>
       <section className='w-[80%] m-auto flex flex-wrap justify-center mt-[-50px] mb-10 gap-10'>
         <div className='border border-gray-200 shadow-lg rounded-md w-[190px] h-[220px] grid place-items-center bg-white'>
