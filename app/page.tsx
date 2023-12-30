@@ -50,7 +50,7 @@ export default function Home() {
 
         <div className={`mx-auto block my-24 w-[70%] ${montserrat.className}`}>
           <h1 className={`text-center text-green-500 text-xl md:text-4xl pb-2`}><i>Never miss our updates about new arrivals and special offers</i></h1>
-          <input type='email' placeholder='Enter your email here*' className='transition-all duraton-300 hover:border-b-2 focus:border-b-2 focus:border-gray-700 hover:border-gray-700 border-b w-[100%] text-lg italic pb-3 mt-5 outline-none' />
+          <input type='email' placeholder='Enter your email here*' className='transition-all duraton-300 hover:border-b-2 focus:border-b-2 focus:border-gray-700 hover:border-gray-700 border-b w-[100%] text-sm md:text-lg italic pb-3 mt-5 outline-none' />
           <button className='bg-gray-800 my-5 px-5 py-3 text-white w-[100%] md:w-[50%] grid m-auto'>Subscribe Now</button>
         </div>
         <Footer />
