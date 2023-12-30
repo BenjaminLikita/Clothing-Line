@@ -21,6 +21,8 @@
 
 .active{
   --tw-bg-opacity: 1;
+  /* --tw-text-opacity: 1; */
+  /* background-color: rgb(34 197 94 / var(--tw-text-opacity)); */
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   color: white;
   border-radius: 50px;

@@ -6,15 +6,13 @@ import Footer from './components/Footer'
 import { Typewriter } from 'react-simple-typewriter'
 import Image from 'next/image'
 import banner from '../public/banner.jpg'
+import { useEffect, useRef } from 'react'
 
 // eslint-disable-next-line @next/next/no-async-client-component
 
 const montserrat = Montserrat({weight: ["100", "200", "300", "400", "500", "600", "700", "800"], subsets: ['latin']})
 export default function Home() {
-
-  // const resources = await fetchImages();
-
-  // const words = ["Discover Timeless Elegance and Modern Trends in Every Stitch.", "Revolutionize your urban wardrobe with our street-smart styles.", "Dress down without compromising style."]
+  
   const words = ["Fashion Designing.", "Fashion Education Crafts.", "General Contracts and Merchandise."]
   return (
     <div>
@@ -39,15 +37,16 @@ export default function Home() {
       </div>
         <div className={`text-center m-auto mt-10 w-[80%] ${montserrat.className}`}>
           <h1 className={`text-green-500 text-3xl font-medium md:text-4xl pb-2`}><i>About the Collection</i></h1>
-          {/* <p className='text-gray-500'>I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p> */}
           <p className='text-gray-500'>Welcome to FreshTopsLily, where we curate a versatile collection encompassing Casual wears, Bespoke and Owambe outfits, Personalized Training, Unique Merchandise, Stylish Headwears, and Handmade Crafts. Our fashion ethos centers around blending comfort with elegance, ensuring that every piece reflects individuality. From special occasions to everyday wear, we offer a holistic fashion experience. Join us in celebrating personal style and discovering the perfect ensemble for every moment at FreshTopsLily.</p>
         </div>
 
-        <Image 
-          className='object-cover w-[70%] m-auto my-24'
-          src={banner}
-          alt='banner'
-        />
+        <div className='relative'>
+          <Image
+            className='object-cover w-[70%] m-auto my-24'
+            src={banner}
+            alt='banner'
+          />
+        </div>
 
         <div className={`mx-auto block my-24 w-[70%] ${montserrat.className}`}>
           <h1 className={`text-center text-green-500 text-xl md:text-4xl pb-2`}><i>Never miss our updates about new arrivals and special offers</i></h1>
