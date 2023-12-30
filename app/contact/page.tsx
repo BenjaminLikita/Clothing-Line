@@ -7,6 +7,7 @@ import {LuExternalLink} from "react-icons/lu"
 import Link from 'next/link'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function ContactPage() {
 
@@ -54,6 +55,7 @@ function ContactPage() {
           <Link href={""} className='flex items-center justify-center gap-3 hover:text-green-500 transition-all duration-200'><LuExternalLink />View </Link>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

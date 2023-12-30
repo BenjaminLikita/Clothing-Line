@@ -13,7 +13,7 @@ function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg
     const [visible, setVisibility] = useState<Boolean>(false)
 
   return (
-    <div className={`bg-transparent border-b ${border} shadow-sm ${color} bg-black ${opacity}`}>
+    <div className={`bg-transparent border-b ${border} shadow-sm ${color} bg-black ${opacity} z-20`}>
         <div className='w-[90%] flex justify-between items-center m-auto md:p-5 py-3'>
           
           <Link href={"/"} className='text-4xl font-semibold'>Logo</Link>

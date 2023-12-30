@@ -7,6 +7,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import Navbar from '../components/Navbar';
 import fetchImages from '../components/resources';
+import Footer from '../components/Footer';
 
 cloudinary.config({ 
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
@@ -57,6 +58,7 @@ async function GalleryPage() {
           }
         </div>
       </div>
+      <Footer />
     </div>
 
   )
