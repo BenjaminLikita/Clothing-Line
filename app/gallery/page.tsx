@@ -41,7 +41,7 @@ async function GalleryPage() {
             result.resources.map((item: CloudinaryResource, i: number) => (
               <div
               key={item.public_id}
-              className={clsx(`rounded-md cursor-pointer overflow-hidden`, {
+              className={clsx(`cursor-pointer overflow-hidden`, {
                 [`row-span-2`]: i % 2,
               })}
               >
@@ -51,7 +51,7 @@ async function GalleryPage() {
                   width="300"
                   height='250'
                   alt={item.public_id}
-                  className={clsx(`block rounded-md object-cover img hover:scale-110 transition-all duration-500`, {
+                  className={clsx(`block object-cover img hover:scale-110 transition-all duration-500`, {
                     // [`lg:row-span-2 md:col-span-2 lg:col-span-1`]: i % 2,
                   })}
                   loading='lazy'

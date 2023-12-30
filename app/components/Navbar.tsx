@@ -18,12 +18,12 @@ function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg
           
           <Link href={"/"} className='text-3xl md:text-4xl font-semibold'>Logo</Link>
 
-          <nav className={clsx('gap-8 font-medium text-xl md:text-lg block md:flex bg-gray-500 bg-opacity-90 h-full transition-all duration-500 w-[55%] md:w-auto md:bg-transparent fixed md:relative top-0 p-10 pl-5 pt-14 md:p-0', {
-            ['right-0 w-full h-screen bg-white z-50 p-10']: visible,
+          <nav className={clsx('justify-between font-medium text-xl md:text-lg block md:flex bg-gray-500 bg-opacity-95 w-[50%] md:w-[55%] lg:w-[40%] text-gray-700 md:text-inherit h-full transition-all duration-500 md:bg-transparent fixed md:relative top-0 p-10 pl-5 pt-14 md:p-0', {
+            ['right-0 bg-white z-50 p-10']: visible,
             ['right-[-100%] md:right-0']: !visible
           })}>
             <FaX
-              size={30}
+              size={25}
               className={"block md:hidden absolute top-[16px] right-[25px] cursor-pointer"}
               onClick={() => setVisibility(false)}
             />
@@ -32,7 +32,7 @@ function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg
             <Link href={"/contact"} className={`py-3 px-5 block md:inline-block lg:hover:scale-110 transition-all duration-700 ${pathname === '/contact' && 'active'}`}>Contact Us</Link>
           </nav>
 
-          <div className='md:hidden sm:block'>
+          <div className='block md:hidden'>
             <FaBars size={30}
               className="cursor-pointer"
               onClick={() => setVisibility(true)}
