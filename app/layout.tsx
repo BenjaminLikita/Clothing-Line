@@ -10,6 +10,9 @@ const poppins = Poppins({weight: ["100", "200", "300", "400", "500", "600", "700
 export const metadata: Metadata = {
   title: 'FreshTopsLily',
   description: 'Fashions & Crafts',
+  icons: {
+    icon: "../public/assets/white.jpg"
+  }
 }
 
 export default function RootLayout({
@@ -19,9 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="../public/assets/white.jpg" type="image/x-icon" sizes='any' />
-      </head>
       <body className={poppins.className}>{children}</body>
     </html>
   )
