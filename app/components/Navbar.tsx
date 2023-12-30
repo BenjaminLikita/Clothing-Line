@@ -14,9 +14,9 @@ function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg
     <div className={`bg-transparent border-b ${border} shadow-sm ${color} bg-black ${opacity}`}>
         <div className='w-[90%] flex justify-between items-center m-auto p-5'>
           
-          <Link href={"/"} className='text-2xl md:text-4xl font-semibold'>Logo</Link>
+          <Link href={"/"} className='text-3xl md:text-4xl font-semibold'>Logo</Link>
 
-          <nav className='gap-8 font-medium text-lg md:text-lg hidden md:flex'>
+          <nav className='gap-8 font-medium text-xl md:text-lg hidden md:flex'>
             <Link href={"/"}className={`py-3 px-5 block md:inline-block lg:hover:scale-110 transition-all duration-700 ${pathname === '/' && 'active'}`}>Home</Link>
             <Link href={"/gallery"} className={`py-3 px-5 block md:inline-block lg:hover:scale-110 transition-all duration-700 ${pathname === '/gallery' && 'active'}`}>Gallery</Link>
             <Link href={"/contact"} className={`py-3 px-5 block md:inline-block lg:hover:scale-110 transition-all duration-700 ${pathname === '/contact' && 'active'}`}>Contact Us</Link>

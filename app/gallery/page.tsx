@@ -33,7 +33,7 @@ async function GalleryPage() {
     <div>
       <Navbar />
       <div className='w-[90%] m-auto'>
-        <h1 className='my-5 text-6xl text-center font-bold'>Gallery</h1>
+        <h1 className='my-5 text-4xl md:text-6xl text-center font-bold'>Gallery</h1>
         <p className='bg-gray-900 text-white w-max py-3 px-5 rounded-3xl font-bold'>Photos <span className='pl-5 text-gray-500 font-normal'>{result.resources.length}</span></p>
         {/* <div className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%] my-7 gap-5`}> */}
         <div className={`grid sm:grid-cols-2 md:grid-cols-3 w-[100%] my-7 gap-5`}>
