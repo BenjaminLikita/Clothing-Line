@@ -12,7 +12,7 @@ function ContactPage() {
 
   return (
     <div>
-      <section className='contact-bg'>
+      <section className='h-[60vh] bg-contact-bg bg-cover bg-center'>
         <div>
           <Navbar color={"text-white"} border={"border-gray-700"} opacity={"bg-opacity-40"}/>
         </div>

@@ -2,17 +2,15 @@
 
 
 import {v2 as cloudinary} from 'cloudinary';
-import React, { useState } from 'react'
-import { CldImage } from 'next-cloudinary';
+import React from 'react'
 import Image from 'next/image';
 import clsx from 'clsx';
-import Link from 'next/link';
 import Navbar from '../components/Navbar';
 
 cloudinary.config({ 
-  cloud_name: 'dj0ocigti', 
-  api_key: '417832474921789', 
-  api_secret: "kWNsEFjOluFj8SFqrpq_MvEkfjY" 
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+  api_key: process.env.CLOUDINARY_CLOUD_API_KEY, 
+  api_secret: process.env.CLOUDINARY_CLOUD_API_SECRET 
 });
 
 
@@ -21,15 +19,24 @@ interface CloudinaryResource {
   secure_url: string;
 }
 async function GalleryPage() {
+  
 
+  // const result = await cloudinary.api.resources({resource_type: "image", folder: "samples"}, (err, res) => {
+  //   if(err){
+  //     console.log(err);
+  //   }
+  // })
+  // const result = await cloudinary.api.resources().then(result => result);
 
-  const result = await cloudinary.api.resources({resource_type: "image"}, (err, res) => {
-    if(err){
-      console.log(err);
+  
+  
+  const result = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image`, {
+    headers : {
+      Authorization: `Basic ${Buffer.from(process.env.CLOUDINARY_CLOUD_API_KEY + ":" + process.env.CLOUDINARY_CLOUD_API_SECRET).toString('base64')}`
     }
-  })
-
-  const random_span = ["col-span-1", "col-span-2", "row-span-1", "row-span-2"]
+  }).then(r => r.json())
+  
+  console.log("result", result.resources.length);
   
   return (
     <div>
@@ -54,7 +61,9 @@ async function GalleryPage() {
                   alt={item.public_id}
                   className={clsx(`block rounded-md object-cover img hover:scale-110 transition-all duration-500`, {
                     // [`lg:row-span-2 md:col-span-2 lg:col-span-1`]: i % 2,
-                  })} />
+                  })}
+                  loading='lazy'
+                  />
               </div>
             ))
           }

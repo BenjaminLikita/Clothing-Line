@@ -26,14 +26,7 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-.contact-bg{
-  background-image: url("/phoneImg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 60vh;
-  width: 100%;
-}
+
 
 .img{
   width: 100%;
@@ -43,5 +36,8 @@ body {
 
 
 .active{
-  background: red;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  color: white;
+  border-radius: 50px;
 }
