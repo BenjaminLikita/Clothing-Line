@@ -19,7 +19,7 @@ export default function Home() {
     <div> 
       {/* <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh] bg-blend-darken'> */}
       {/* <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh]'> */}
-      <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh] after:bg-black after:bg-opacity-50 isolate after:-z-10 after:w-[100%] after:h-[60vh] after:md:h-[80vh] after:absolute after:top-0 after:left-0 '>
+      <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh] after:bg-black after:bg-opacity-50 isolate after:-z-10 after:w-[100%] after:h-[60vh] after:md:h-[80vh] after:absolute after:top-0 after:left-0'>
         <Navbar color={"text-white"} opacity={"bg-opacity-40"} border='border-gray-500'/>
         <div className='flex flex-col items-center justify-center h-4/5 w-[90%] m-auto text-center'>
           <h1 className='text-white text-3xl md:text-5xl pt[-10px] pb-[10px] font-bold'>Elevate Your Style: <span className='text-green-500'>Lumiere</span> Fashion</h1>
