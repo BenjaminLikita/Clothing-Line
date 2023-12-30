@@ -14,13 +14,15 @@ export default function Home() {
 
   // const resources = await fetchImages();
 
-  const words = ["Discover Timeless Elegance and Modern Trends in Every Stitch.", "Revolutionize your urban wardrobe with our street-smart styles.", "Dress down without compromising style."]
+  // const words = ["Discover Timeless Elegance and Modern Trends in Every Stitch.", "Revolutionize your urban wardrobe with our street-smart styles.", "Dress down without compromising style."]
+  const words = ["Fashion Designing.", "Fashion Education Crafts.", "General Contracts and Merchandise."]
   return (
     <div>
       <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh] after:bg-black after:bg-opacity-50 isolate after:-z-10 after:w-[100%] after:h-[60vh] after:md:h-[80vh] after:absolute after:top-0 after:left-0'>
         <Navbar color={"text-white"} opacity={"bg-opacity-40"} border='border-gray-500'/>
         <div className='flex flex-col items-center justify-center h-4/5 w-[90%] m-auto text-center'>
-          <h1 className='text-white text-3xl md:text-5xl pt[-10px] pb-[10px] font-bold'>Elevate Your Style: <span className='text-green-500'>Lumiere</span> Fashion</h1>
+          {/* <h1 className='text-white text-3xl md:text-5xl pt[-10px] pb-[10px] font-bold'>Elevate Your Style: <span className='text-green-500'>Lumiere</span> Fashion</h1> */}
+          <h1 className='text-white text-3xl md:text-5xl pt[-10px] pb-[10px] font-bold'>Freshtopslily <span className="text-green-500">Fashions</span> and Crafts</h1>
           <p className='text-white text-lg md:text-xl font-medium w-[80%]'>
             <Typewriter 
               words={words}
@@ -37,7 +39,8 @@ export default function Home() {
       </div>
         <div className={`text-center m-auto mt-10 w-[80%] ${montserrat.className}`}>
           <h1 className={`text-green-500 text-3xl font-medium md:text-4xl pb-2`}><i>About the Collection</i></h1>
-          <p className='text-gray-500'>I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+          {/* <p className='text-gray-500'>I’m a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p> */}
+          <p className='text-gray-500'>Welcome to FreshTopsLily, where we curate a versatile collection encompassing Casual wears, Bespoke and Owambe outfits, Personalized Training, Unique Merchandise, Stylish Headwears, and Handmade Crafts. Our fashion ethos centers around blending comfort with elegance, ensuring that every piece reflects individuality. From special occasions to everyday wear, we offer a holistic fashion experience. Join us in celebrating personal style and discovering the perfect ensemble for every moment at FreshTopsLily.</p>
         </div>
 
         <Image 

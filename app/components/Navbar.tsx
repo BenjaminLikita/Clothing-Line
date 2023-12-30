@@ -5,6 +5,8 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaX } from "react-icons/fa6";
 import clsx from 'clsx';
+import logo from '@/public/logo/white-transparent2.png'
+import Image from 'next/image';
 
 function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg-opacity-0"}) {
     
@@ -16,7 +18,9 @@ function Navbar({color = "text-black", border = "border-gray-200", opacity = "bg
     <div className={`bg-transparent border-b ${border} shadow-sm ${color} bg-black ${opacity}`}>
         <div className='w-[90%] flex justify-between items-center m-auto md:p-5 py-3'> 
           
-          <Link href={"/"} className='text-4xl font-semibold'>Logo</Link>
+          <Link href={"/"} className='text-4xl font-semibold'>
+            <Image src={logo} alt='logo' width={100} height={100} />
+          </Link>
 
           <nav className={clsx('justify-between font-medium text-xl md:text-lg block md:flex bg-gray-500 bg-opacity-95 w-[60%] md:w-[55%] lg:w-[40%] text-gray-700 md:text-inherit h-full transition-all duration-500 md:bg-transparent fixed md:relative top-0 p-10 pl-5 pt-14 md:p-0', {
             ['right-0 bg-white z-50 p-10']: visible,

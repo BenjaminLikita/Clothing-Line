@@ -24,35 +24,35 @@ function ContactPage() {
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <FaFacebook color={"blue"} size={50}/>
           <h1 className='block text-2xl font-medium'>Facebook</h1>
-          <Link href={""} className='flex items-center justify-center gap-3 hover:text-blue-700 transition-all duration-200'><LuExternalLink />View</Link>
+          <Link href={"https://facebook.com/freshtopslily"} target='_blank' className='flex items-center justify-center gap-3 hover:text-blue-700 transition-all duration-200'><LuExternalLink />View</Link>
         </div>
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <FaWhatsapp color={"green"} size={50}/>
           <h1 className='block text-2xl font-medium'>Whatsapp</h1>
-          <Link href={""} className='flex items-center justify-center gap-3 hover:text-green-700 transition-all duration-200'><LuExternalLink />View</Link>
+          <Link href={"http://wa.me/+2348137393179"} target='_blank' className='flex items-center justify-center gap-3 hover:text-green-700 transition-all duration-200'><LuExternalLink />View</Link>
         </div>
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <Image src={instagram} alt='instagram'
           height={50}/>
           <h1 className='block text-2xl font-medium'>Instagram</h1>
-          <Link href={""} className='group flex hover:bg-gradient-to-r from-purple-800 to-pink-500 hover:bg-clip-text hover:text-transparent
+          <Link href={"https://www.instagram.com/fashiondesignerminna/"} target='_blank' className='group flex hover:bg-gradient-to-r from-purple-800 to-pink-500 hover:bg-clip-text hover:text-transparent
           items-center justify-center gap-3 transition-all duration-200'><LuExternalLink className="group-hover:text-purple-500"/>View</Link>
         </div>
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <Image src={gmail} alt='gmail'
           height={50}/>
           <h1 className='block text-2xl font-medium'>Gmail</h1>
-          <Link href={""} className='flex items-center justify-center gap-3 hover:text-yellow-700 transition-all duration-200'><LuExternalLink />View</Link>
+          <Link href={"mailto:freshtopslily1@gmail.com"} target='_blank' className='flex items-center justify-center gap-3 hover:text-yellow-700 transition-all duration-200'><LuExternalLink />View</Link>
         </div>
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <FaYoutube color={"red"} size={50}/>
           <h1 className='block text-2xl font-medium'>Youtube</h1>
-          <Link href={""} className='flex items-center justify-center gap-3 hover:text-red-700 transition-all duration-200'><LuExternalLink />View</Link>
+          <Link href={"https://www.youtube.com/@freshtopslily"} target='_blank' className='flex items-center justify-center gap-3 hover:text-red-700 transition-all duration-200'><LuExternalLink />View</Link>
         </div>
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <FaXTwitter color={"black"} size={50}/>
           <h1 className='block text-2xl font-medium'>Twitter</h1>
-          <Link href={""} className='flex items-center justify-center gap-3 hover:text-green-500 transition-all duration-200'><LuExternalLink />View </Link>
+          <Link href={"https://twitter.com/freshtopslily"} target='_blank' className='flex items-center justify-center gap-3 hover:text-green-500 transition-all duration-200'><LuExternalLink />View </Link>
         </div>
       </section>
       <Footer />
