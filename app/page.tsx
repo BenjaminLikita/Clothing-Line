@@ -16,9 +16,7 @@ export default function Home() {
 
   const words = ["Discover Timeless Elegance and Modern Trends in Every Stitch.", "Revolutionize your urban wardrobe with our street-smart styles.", "Dress down without compromising style."]
   return (
-    <div> 
-      {/* <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh] bg-blend-darken'> */}
-      {/* <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh]'> */}
+    <div>
       <div className='bg-banner-img bg-cover bg-center h-[60vh] md:h-[80vh] after:bg-black after:bg-opacity-50 isolate after:-z-10 after:w-[100%] after:h-[60vh] after:md:h-[80vh] after:absolute after:top-0 after:left-0'>
         <Navbar color={"text-white"} opacity={"bg-opacity-40"} border='border-gray-500'/>
         <div className='flex flex-col items-center justify-center h-4/5 w-[90%] m-auto text-center'>

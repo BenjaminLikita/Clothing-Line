@@ -13,14 +13,14 @@ function ContactPage() {
 
   return (
     <div>
-      <section className='h-[60vh] bg-contact-img bg-cover bg-center after:bg-black after:bg-opacity-50 isolate after:-z-10 after:w-[100%] after:h-[60vh]  after:absolute after:top-0 after:left-0'>
+      <section className='h-[60vh] bg-contact-img bg-cover relative bg-center'>
         <div>
           <Navbar color={"text-white"} border={"border-gray-700"} opacity={"bg-opacity-40"}/>
         </div>
         
-        <h1 className=' font-bold text-4xl lg:text-5xl w-full text-white text-center pt-24'>Contact Us</h1>
+        <h1 className='font-bold text-4xl lg:text-5xl w-full text-white text-center pt-24'>Contact Us</h1>
       </section>
-      <section className='isolate w-[90%] md:w-[80%] m-auto flex flex-wrap justify-center mt-[-80px] md:mt-[-50px] mb-10 gap-5 md:gap-10'>
+      <section className='isolate w-[90%] md:w-[80%] m-auto flex flex-wrap justify-center mt-[-50px] md:mt-[-50px] mb-10 gap-5 md:gap-10'>
         <div className='border border-gray-200 shadow-lg rounded-md w-[150px] md:w-[190px] h-[220px] grid place-items-center bg-white'>
           <FaFacebook color={"blue"} size={50}/>
           <h1 className='block text-2xl font-medium'>Facebook</h1>
