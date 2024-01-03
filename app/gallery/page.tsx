@@ -57,7 +57,7 @@ async function GalleryPage() {
             ))
           }
         </div>
-{resources}
+
       </div>
       <Footer />
     </div>
