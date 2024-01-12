@@ -24,6 +24,7 @@ async function GalleryPage() {
   
   
   const resources = await fetchImages();
+  console.log(resources)
   
   
   return (
@@ -38,13 +39,12 @@ async function GalleryPage() {
             resources.map((item: CloudinaryResource, i: number) => (
               <div
               key={item.public_id}
-              className={clsx(`cursor-pointer overflow-hidden`, {
+              className={clsx(`cursor-pointer overflow-hidden rounded-xl`, {
                 [`row-span-2`]: i % 2,
               })}
               >
                 <Image
                   src={item.secure_url}
-                  // width="300"
                   width="300"
                   height='250'
                   alt={item.public_id}
