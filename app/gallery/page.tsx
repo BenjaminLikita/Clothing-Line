@@ -47,8 +47,8 @@ async function GalleryPage() {
               >
                 <Image
                   src={item.secure_url}
-                  width="30"
-                  height='25'
+                  width="300"
+                  height='250'
                   alt={item.public_id}
                   className={clsx(`block rounded-xl h-[100%] w-[100%] object-cover hover:scale-110 transition-all duration-500`, {
                     // [`lg:row-span-2 md:col-span-2 lg:col-span-1`]: i % 2,
