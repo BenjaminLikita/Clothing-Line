@@ -27,3 +27,9 @@
   color: white;
   border-radius: 50px;
 }
+
+.bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

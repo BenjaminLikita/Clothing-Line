@@ -13,7 +13,7 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'contact-img': "url('../public/phoneImg.jpg')",
-        'banner-img': "url('../public/banner.jpg')",
+        'banner-img': "url('../public/banner1c.jpg')",
       },
     },
     fontFamily: {
